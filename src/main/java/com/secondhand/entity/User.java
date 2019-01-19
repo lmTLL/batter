@@ -1,4 +1,4 @@
-package entity;
+package com.secondhand.entity;
 
 public class User {
     private Integer uid;

@@ -12,10 +12,10 @@
 	<typeAliases> 
 	<!-- type 包名+类型，alias 指定别名 -->
 	
-		<typeAlias type="com.secondhand.entity.User" alias="User"/>
-		<typeAlias type="com.secondhand.entity.Types" alias="Types"/>
-	  	<typeAlias type="com.secondhand.entity.Goodstypes" alias="Goodstypes"/>
-	  	<typeAlias type="com.secondhand.entity.Goodstatus" alias="Goodstatus"/>
+		<typeAlias type="com.secondhand.com.secondhand.entity.User" alias="User"/>
+		<typeAlias type="com.secondhand.com.secondhand.entity.Types" alias="Types"/>
+	  	<typeAlias type="com.secondhand.com.secondhand.entity.Goodstypes" alias="Goodstypes"/>
+	  	<typeAlias type="com.secondhand.com.secondhand.entity.Goodstatus" alias="Goodstatus"/>
 <!-- 		<typeAlias type="com.qfedu.admin.entity.Role" alias="Role"/> -->
 		
 	</typeAliases>
