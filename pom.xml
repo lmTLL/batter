@@ -3,6 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <packaging>war</packaging>
 
     <groupId>com.batter</groupId>
     <artifactId>secondhand</artifactId>
@@ -159,6 +160,28 @@
     </dependencies>
 
     <build>
+
+        <resources>
+            <!--需要设置打包的文件 特别是非java文件-->
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>true</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                    <include>**/*.properties</include>
+                    <include>**/*.bpmn</include>
+                    <include>**/*.ftl</include>
+                </includes>
+            </resource>
+        </resources>
+
+
         <plugins>
             <!--修改Maven默认的jdk版本 -->
             <plugin>
